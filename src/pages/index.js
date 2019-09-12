@@ -166,6 +166,15 @@ class HomeIndex extends React.Component {
                 className="skills"
               />
             </div>
+            <br />
+            <div>
+              <h2>Experience</h2>
+              <ul>
+                <li>Freelance developer 2016-2018</li>
+                <li>Developer hackU 2018-2019 </li>
+                <li>Head Developer hackU 2019-Current</li>
+              </ul>
+            </div>
           </section>
 
           <section id="three">
