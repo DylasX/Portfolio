@@ -29,7 +29,7 @@ class HomeIndex extends React.Component {
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Im Miguel also known as Dylas, I'm a Software Engineer with a lot
               of passion of my work. I really enjoy learn new things,
-              develop with new tecnologys, do hikes, play basketball, expend
+              develop with new tecnologys, do hikes, play basketball, expend 
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               time with my friends and I'm a lover of videogames
               <br />
