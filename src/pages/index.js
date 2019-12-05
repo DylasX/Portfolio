@@ -147,6 +147,12 @@ class HomeIndex extends React.Component {
                 width="50"
                 className="skills"
               />
+              <img src="https://img.icons8.com/color/48/000000/python.png"
+                alt="python"
+                height="50"
+                width="50"
+                className="skills"
+              />
             </div>
             <br />
             <div>
