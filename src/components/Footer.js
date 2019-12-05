@@ -36,7 +36,7 @@ class Footer extends React.Component {
             </li>
           </ul>
           <ul className="copyright">
-            <li>&copy; @_Dylas</li>
+            <li>&copy; @_dylas_</li>
           </ul>
         </div>
       </div>
