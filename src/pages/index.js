@@ -1,9 +1,12 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
+import { element } from "prop-types"
 
 class HomeIndex extends React.Component {
   render() {
+    const { data } = this.props
     const siteTitle = "Home"
     const siteDescription = "Site description"
 
@@ -25,8 +28,8 @@ class HomeIndex extends React.Component {
             <p>
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Im Miguel also known as Dylas, I'm a Software Engineer with a lot
-              of passion of his work. I really enjoy learning new things,
-              develop with new tecnologys, do hikes, play basketball, expend
+              of passion to my work. I really enjoy learning new things, develop
+              with new tecnologys, hiking, basketball, expend
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               time with my friends and I'm a lover of videogames
               <br />
@@ -35,8 +38,8 @@ class HomeIndex extends React.Component {
               </span>
               <br />
               <br />
-              This space is only to show a little bit of me and my work if you
-              are interested on something just let me know!
+              This space is only to show a little bit of my work if you are
+              interested on something just let me know!
               <span role="img" aria-label="emoji">
                 🤓
               </span>
@@ -169,32 +172,27 @@ class HomeIndex extends React.Component {
               <ul>
                 <li>Freelance developer 2016-2018</li>
                 <li>Developer hackU 2018-2019 </li>
-                <li>Head Developer hackU 2019-Current</li>
+                <li>Head Developer hackU 2019-2020</li>
+                <li>Fullstack developer Julius2Grow 2020-Current</li>
               </ul>
             </div>
           </section>
 
           <section id="three">
-            <h2>Recent Work</h2>
-
-            {/* <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            /> */}
-
-            <ul className="actions">
-              <li>
-                <a href="https://gitlab.com/Miguel.sierra" className="button">
-                  Full Portfolio
-                </a>
-              </li>
+            <h2>Last work on Gitlab</h2>
+            <ul>
+              {data.allGitlabProjects.nodes.map((element, i) => (
+                <li key={i}>
+                  {element.name} -{" "}
+                  <a href={element.web_url} target="_blank">
+                    {element.web_url}
+                  </a>
+                </li>
+              ))}
             </ul>
+            <a href="https://gitlab.com/Miguel.sierra" className="button">
+              Full Portfolio
+            </a>
           </section>
 
           <section id="four">
@@ -261,3 +259,14 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex
+
+export const query = graphql`
+  query allProjects {
+    allGitlabProjects(limit: 3) {
+      nodes {
+        web_url
+        name
+      }
+    }
+  }
+`

@@ -37,9 +37,7 @@ class Footer extends React.Component {
           </ul>
           <ul className="copyright">
             <li>&copy; @_Dylas</li>
-            <li>
-              <a href="https://icons8.com/">icons by Icons8</a>
-            </li>
+            <li>{/* <a href="https://icons8.com/">icons by Icons8</a> */}</li>
           </ul>
         </div>
       </div>

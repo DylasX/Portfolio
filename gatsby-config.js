@@ -18,6 +18,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-gitlab`,
+      options: {
+        accessToken: "6_Vhc2Mrv_np79tc-FZP",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
