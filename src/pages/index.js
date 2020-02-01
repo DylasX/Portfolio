@@ -1,9 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-
 import Layout from "../components/layout"
-// import Lightbox from 'react-images'
-// import Gallery from "../components/Gallery"
 
 class HomeIndex extends React.Component {
   render() {
