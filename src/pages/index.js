@@ -26,12 +26,10 @@ class HomeIndex extends React.Component {
               </h2>
             </header>
             <p>
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Im Miguel also known as Dylas, I'm a Software Engineer with a lot
-              of passion to my work. I really enjoy learning new things, develop
-              with new tecnologys, hiking, basketball, expend
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
-              time with my friends and I'm a lover of videogames
+              of passion of my work. I really enjoy learn new things, develop
+              with new tecnologys, hiking, basketball, expend time with my
+              friends and I'm a lover of videogames
               <br />
               <span role="img" aria-label="emoji">
                 🎮
@@ -143,6 +141,13 @@ class HomeIndex extends React.Component {
               <img
                 src="https://img.icons8.com/color/48/000000/react-native.png"
                 alt="linux"
+                height="50"
+                width="50"
+                className="skills"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/python.png"
+                alt="python"
                 height="50"
                 width="50"
                 className="skills"
