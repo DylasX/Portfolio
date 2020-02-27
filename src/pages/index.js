@@ -2,8 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import { element } from "prop-types"
-
 class HomeIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -26,10 +24,10 @@ class HomeIndex extends React.Component {
               </h2>
             </header>
             <p>
-              Im Miguel also known as Dylas, I'm a Software Engineer with a lot
+              Im Miguel also known as Dylas, Im a Software Engineer with a lot
               of passion of my work. I really enjoy learn new things, develop
               with new tecnologys, hiking, basketball, expend time with my
-              friends and I'm a lover of videogames
+              friends and Im a lover of videogames
               <br />
               <span role="img" aria-label="emoji">
                 🎮
@@ -183,22 +181,39 @@ class HomeIndex extends React.Component {
             </div>
           </section>
 
-          <section id="three">
+          <ul id="three">
             <h2>Last work on Gitlab</h2>
             <ul>
               {data.allGitlabProjects.nodes.map((element, i) => (
                 <li key={i}>
-                  {element.name} -{" "}
-                  <a href={element.web_url} target="_blank">
-                    {element.web_url}
-                  </a>
+                  <div className="gitlab" style={{ marginBottom: "50px" }}>
+                    <img
+                      src={element.avatar_url}
+                      className="responsive"
+                      width="100"
+                      alt={element.name}
+                    />{" "}
+                    <h4
+                      className="title"
+                      style={{ "text-transform": "capitalize" }}
+                    >
+                      <strong>{element.name} : </strong>
+                    </h4>
+                    <a
+                      href={element.web_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {element.web_url}
+                    </a>
+                  </div>
                 </li>
               ))}
             </ul>
             <a href="https://gitlab.com/Miguel.sierra" className="button">
               Full Portfolio
             </a>
-          </section>
+          </ul>
 
           <section id="four">
             <h2>Get In Touch</h2>
@@ -267,10 +282,11 @@ export default HomeIndex
 
 export const query = graphql`
   query allProjects {
-    allGitlabProjects(limit: 3) {
+    allGitlabProjects(limit: 3, filter: { visibility: { eq: "public" } }) {
       nodes {
         web_url
         name
+        avatar_url
       }
     }
   }

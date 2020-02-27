@@ -36,7 +36,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-sass",
-    `gatsby-plugin-netlify-cms`,
+    "gatsby-plugin-netlify-cms",
     // `gatsby-plugin-offline`,
   ],
 }
