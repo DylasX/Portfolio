@@ -16,8 +16,6 @@
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-source-gitlab": "^1.0.3",
     "gatsby-transformer-sharp": "^2.3.15",
-    "netlify-cms": "^2.9.7",
-    "netlify-cms-app": "^2.11.25",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
