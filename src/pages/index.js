@@ -184,7 +184,9 @@ class HomeIndex extends React.Component {
                 <li>Freelance developer 2016-2018</li>
                 <li>Developer hackU 2018-2019 </li>
                 <li>Head Developer hackU 2019-2020</li>
-                <li>Fullstack developer Julius2Grow 2020-Current</li>
+                <li>Fullstack developer Julius2Grow 2020-2021</li>
+                <li>Backend developer Globant 2021-2022</li>
+                <li>Fullstack developer Gorilla 2022-Current</li>
               </ul>
             </div>
           </section>
