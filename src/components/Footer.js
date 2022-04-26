@@ -3,7 +3,7 @@ import React from "react"
 class Footer extends React.Component {
   render() {
     return (
-      <div id="footer">
+      <div id="footer" style={{ backgroundColor: "hsl(0deg 0% 100% / 100%)" }}>
         <div className="inner">
           <ul className="icons">
             <li>
@@ -27,10 +27,7 @@ class Footer extends React.Component {
               </a>
             </li>
             <li>
-              <a
-                href="mailto:m@dylas.dev"
-                className="icon fa-envelope-o"
-              >
+              <a href="mailto:m@dylas.dev" className="icon fa-envelope-o">
                 <span className="label">Email</span>
               </a>
             </li>

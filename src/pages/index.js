@@ -5,14 +5,22 @@ import { graphql } from "gatsby"
 class HomeIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = "Home"
-    const siteDescription = "Site description"
+    const siteTitle = "Dylas web developer"
+    const siteDescription = "Welcome to my portfolio"
 
     return (
       <Layout>
         <Helmet>
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
+          <meta property="og:title" content="Dylas" />
+          <meta property="og:type" content="Blog" />
+          <meta property="og:url" content=" https://dylas.netlify.app" />
+          <meta
+            property="og:image"
+            content="https://drive.google.com/uc?id=1uGYYLRBY1PrrhBcT5_lDgmQFHMIjlj8f"
+          />
+          <meta property="og:description" content="Welcome to my portfolio" />
         </Helmet>
 
         <div id="main">

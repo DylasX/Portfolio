@@ -32,7 +32,7 @@ export const StyledHeader = styled.header`
   }
   & > a > img {
     margin: 0;
-    background-color: ${colors.green};
+    background-color: ${colors.lightBlue};
     height: 100%;
     padding: 0.5rem 0.8rem;
   }
@@ -171,7 +171,7 @@ export const StyledProducts = styled.div`
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     p {
       margin: 0;
-      color: ${colors.green};
+      color: ${colors.lightBlue};
       font-weight: 500;
       font-size: 1.2rem;
     }
@@ -184,9 +184,9 @@ export const StyledProducts = styled.div`
       text-decoration: none;
       color: ${colors.darkBlue};
       font-size: 0.8rem;
-      border-bottom: 3px solid ${colors.green};
+      border-bottom: 3px solid ${colors.lightBlue};
       span {
-        color: ${colors.green};
+        color: ${colors.lightBlue};
       }
     }
     &:hover {
@@ -227,7 +227,7 @@ export const StyledProductDetail = styled.div`
     font-size: 0.9rem;
   }
   & b {
-    color: ${colors.green};
+    color: ${colors.lightBlue};
     font-size: 1.5rem;
     margin: 0;
     font-weight: 800;
@@ -338,7 +338,7 @@ export const Footer = styled.footer`
   position: relative;
   bottom: 0;
   a {
-    color: ${colors.green};
+    color: ${colors.lightBlue};
     margin-left: 0.3rem;
     text-decoration: none;
   }
@@ -412,7 +412,7 @@ export const SizeSelect = styled.div`
 export const Button = styled.button`
   cursor: pointer;
   background-color: ${({ type }) =>
-    type === "outline" ? "transparent" : colors.green};
+    type === "outline" ? "transparent" : colors.lightBlue};
   color: ${({ type }) => (type === "outline" ? colors.darkBlue : "white")};
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
@@ -420,7 +420,7 @@ export const Button = styled.button`
   border: ${({ type }) =>
     type === "outline"
       ? `3px solid ${colors.darkBlue}`
-      : `3px solid ${colors.green}`};
+      : `3px solid ${colors.lightBlue}`};
   border-radius: 12px;
   a {
     text-decoration: none;

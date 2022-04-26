@@ -11,7 +11,7 @@ class Header extends React.Component {
           <a href="#" className="image avatar">
             <img src={avatar} alt="" />
           </a>
-          <h1>
+          <h1 style={{ backgroundColor: "hsl(0deg 0% 100% / 100%)" }}>
             <strong>I am Miguel Sierra</strong>, Just a simple mortal that likes
             all about software <br></br>
             <span role="img" aria-label="emoji">
