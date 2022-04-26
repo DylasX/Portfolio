@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-source-gitlab`,
       options: {
-        accessToken: "6_Vhc2Mrv_np79tc-FZP",
+        accessToken: "glpat-xRx5qAvKbaVadnandwqW",
       },
     },
     {
