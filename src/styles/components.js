@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { above } from "./index"
 
 export const colors = {
-  green: "#98ca3f",
+  green: "#1D89B8",
   orange: "#f8b71c",
   gray: "#969696",
   darkBlue: "#1c3643",
